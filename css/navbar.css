@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+:root{
+    --bg-color: #00273d;
+    --text-color: rgb(255, 255, 255);
+    --font-size: 20px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-family:'Archivo Black', Courier, monospace;
+    font-size: var(--font-size);
+}
+
+nav{
+    color:  var(--text-color);   
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+    width: 100%;
+    position: fixed;
+}
+
+nav .logo{
+    color:var(--text-color);
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+    height: 40px;
+    width: 100px;
+}
+
+.navItems{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+
+.navItems a{
+    padding: 10px 17px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    border-radius: 30px;
+}
+
+.navItems a:hover{
+    background-color: white;
+    color: var(--bg-color);
+}
+
+.navItems .active, .navItems .active:hover{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-bottom: 3px solid white;
+    border-radius: 0px;
+}
+
+footer{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    height: 100px;
+    align-content: center;
+    padding: 0px 60px;
+}
+
+footer .social-accounts{
+    display: flex;
+    gap: 40px
+}
+
+.social-accounts i{
+    font-size: 40px;
+}
+
+
+.fa-instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+     background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.fa-square-facebook{
+    background: linear-gradient(135deg, #1877F2 0%, #0044cc 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.fa-github{
+    background: white;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+footer > ul{
+    list-style: none;
+}
+
+@media (max-width: 800px) {
+
+    :root{
+        --font-size: 16px;
+    }
+    
+    nav{
+        padding: 20px;
+    }
+
+    .navItems a{
+        padding: 5px;
+    }
+}

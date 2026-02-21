@@ -1,0 +1,131 @@
+:root{
+    --bg-color: #00273d;
+    --text-color: rgb(255, 255, 255);
+    --header-font-size: 25px
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+main{
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container{
+    width: 80%;
+}
+
+.page-title{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--text-color);
+    font-size: var(--header-font-size);
+    font-weight: bold;
+}
+
+.page-title::before{
+    content: "";
+    flex: 0.1;
+    height: 2px;
+    background: var(--text-color);
+}
+
+.page-title::after{
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: var(--text-color);
+}
+
+.contact-info-list{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: var(--text-color);
+}
+
+.contact-info-list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid;
+    padding: 25px;
+    min-height: 120px;
+    width: 500px;
+
+    transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.contact-info-list li:hover{
+        background-color: #003a57;
+        transform: translateY(-14px) scale(1.03);
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25), 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.social-accounts{
+    margin: 100px 0px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 90px;
+}
+
+.social-accounts i{
+    font-size: 100px;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.social-accounts i:hover {
+    transform: scale(1.2) rotate(6deg);
+    color: #00d4ff;
+    filter: drop-shadow(0 0 15px rgba(242, 242, 242, 0.8))
+            drop-shadow(0 0 30px rgba(255, 255, 255, 0.5));
+}
+
+@media (max-width: 800px) {
+
+    .contact-info-list {
+        gap: 30px;
+        padding-top: 30px;
+    }
+
+    .contact-info-list li {        
+        min-height: 100px;
+        padding: 20px;
+    }
+
+    .contact-info-list li:hover {
+        transform: translateY(-8px) scale(1.02); 
+    }
+
+    .social-accounts {
+        gap: 40px;             
+        flex-wrap: wrap;         
+        margin: 60px 0px;
+    }
+
+    .social-accounts i {
+        font-size: 70px;       
+    }
+
+    .social-accounts i:hover {
+        transform: scale(1.1) rotate(4deg);
+    }
+}
+

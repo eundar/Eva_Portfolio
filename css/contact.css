@@ -101,31 +101,33 @@ main{
 @media (max-width: 800px) {
 
     .contact-info-list {
-        gap: 30px;
-        padding-top: 30px;
+        display: flex;
+        flex-direction: column;   
+        gap: 20px;
+        padding-top: 20px;
     }
 
     .contact-info-list li {        
-        min-height: 100px;
-        padding: 20px;
+        min-height: auto;
+        width: 100%;        
+        padding: 16px;
     }
 
     .contact-info-list li:hover {
-        transform: translateY(-8px) scale(1.02); 
+        transform: none;
     }
 
     .social-accounts {
-        gap: 40px;             
-        flex-wrap: wrap;         
-        margin: 60px 0px;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+        margin: 40px 0;
     }
 
     .social-accounts i {
-        font-size: 70px;       
-    }
-
-    .social-accounts i:hover {
-        transform: scale(1.1) rotate(4deg);
+        font-size: 48px;         
     }
 }
+
 

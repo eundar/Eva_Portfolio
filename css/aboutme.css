@@ -94,9 +94,10 @@ main{
         --header-font-size: 15px;
     }
     
-    main header{
-        margin: 25px 0 50px 0 ;
+    main{
+        padding-top: 80px;
     }
+
     .content{
         align-items: center;
         flex-direction: column;

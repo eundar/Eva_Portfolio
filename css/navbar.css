@@ -116,7 +116,8 @@ footer > ul{
     
     
     nav{
-        padding: 20px;
+        padding: 10px;
+        gap: 5px;
     }
 
     .navItems a{
@@ -124,3 +125,4 @@ footer > ul{
     }
 
 }
+

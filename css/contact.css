@@ -100,11 +100,12 @@ main{
 
 @media (max-width: 800px) {
 
-    .contact-info-list {
-        display: flex;
-        flex-direction: column;   
-        gap: 20px;
-        padding-top: 20px;
+    :root{
+        --header-font-size: 15px;
+    }
+
+     main{
+        padding-top: 80px;
     }
 
     .contact-info-list li {        
@@ -113,21 +114,16 @@ main{
         padding: 16px;
     }
 
-    .contact-info-list li:hover {
-        transform: none;
-    }
-
     .social-accounts {
-        display: flex;
-        justify-content: center;
-        gap: 25px;
-        flex-wrap: wrap;
-        margin: 40px 0;
+        gap: 50px;
+        margin-top: 50px;
     }
 
     .social-accounts i {
         font-size: 48px;         
     }
+
 }
+
 
 
